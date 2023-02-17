@@ -15,10 +15,10 @@ enum class ValidImageUpdaters(override val updater: Image.() -> Unit) : Componen
     }),
 }
 
-fun getRandomPrefix() : String {
+fun getRandomPrefix(): String {
     return oneOf("image", "img", "picture", "graph", "")
 }
 
-fun getRandomValidExtension() : String {
+fun getRandomValidExtension(): String {
     return "." + oneOf("png", "jpg", "jpeg", "svg")
 }

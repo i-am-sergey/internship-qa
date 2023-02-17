@@ -17,7 +17,7 @@ enum class ValidFormatUpdaters(override val updater: Format.() -> Unit) : Compon
     }),
 }
 
-fun getColorCode() : String {
+fun getColorCode(): String {
     return Random.nextInt(0xffffff)
         .let { "%06x".format(it) }
 }

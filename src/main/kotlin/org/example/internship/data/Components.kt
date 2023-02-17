@@ -23,7 +23,7 @@ class Chapter : Component() {
 
 @Serializable
 @SerialName("image")
-class Image : Component(){
+class Image : Component() {
     var src: String? by Properties()
     var darkSrc: String? by Properties()
 }

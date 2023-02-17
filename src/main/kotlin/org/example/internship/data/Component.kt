@@ -23,9 +23,10 @@ abstract class Component {
     private val type: String = this.javaClass.simpleName
 
     class Properties {
-        operator fun getValue(thisRef: Component, property: KProperty<*>) : String? {
+        operator fun getValue(thisRef: Component, property: KProperty<*>): String? {
             return thisRef.properties[property.name]
         }
+
         operator fun setValue(thisRef: Component, property: KProperty<*>, value: String?) {
             thisRef.properties[property.name] = value
         }

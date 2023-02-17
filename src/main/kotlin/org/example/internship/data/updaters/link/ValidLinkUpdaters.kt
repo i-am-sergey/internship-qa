@@ -11,6 +11,6 @@ enum class ValidLinkUpdaters(override val updater: Link.() -> Unit) : ComponentU
     })
 }
 
-fun getValidUrl() : String {
+fun getValidUrl(): String {
     return oneOf("https://", "http://") + randomAzString(5..10) + "." + oneOf("com", "org", "edu")
 }

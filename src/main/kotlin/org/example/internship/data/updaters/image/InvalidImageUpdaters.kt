@@ -27,6 +27,6 @@ enum class InvalidImageUpdaters(override val updater: Image.() -> Unit) : Compon
     })
 }
 
-fun getRandomInvalidExtension() : String {
+fun getRandomInvalidExtension(): String {
     return "." + oneOf("html", "bmp", "mp4")
 }
